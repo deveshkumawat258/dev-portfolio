@@ -1,29 +1,83 @@
-<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="style.css">
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Dev Kumar | Portfolio</title>
   <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
+<script src="script.js"></script>
 <body>
-  <header>
-    <h1>Dev Kumar</h1>
-    <p>Python Learner | Future ML Engineer | Bakchodi Pro Max</p>
-  </header>
-  
-  <section>
-    <h2>Projects</h2>
-    <ul>
-      <li>🔹 VS Code + GitHub Integration</li>
-      <li>🔹 Python Calculator</li>
-      <li>🔹 LinkedIn Automation</li>
+  <nav>
+    <div class="logo">DevKumar</div>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
     </ul>
+  </nav>
+
+  <header class="hero">
+    <h1>Hi, I'm Dev Kumar</h1>
+    <p>A passionate Web Developer & ML Learner</p>
+    <a href="#contact" class="btn">Hire Me</a>
+  </header>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>I'm a self-taught developer who loves building cool projects and automating boring stuff. Currently exploring Machine Learning and Web3.</p>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="skills-grid">
+      <div class="skill"><i class="fab fa-html5"></i> HTML</div>
+      <div class="skill"><i class="fab fa-css3-alt"></i> CSS</div>
+      <div class="skill"><i class="fab fa-js"></i> JavaScript</div>
+      <div class="skill"><i class="fab fa-python"></i> Python</div>
+      <div class="skill"><i class="fab fa-github"></i> Git/GitHub</div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="project-list">
+      <div class="project">
+        <h3>Personal Portfolio</h3>
+        <p>A clean, responsive portfolio built with HTML, CSS & JS.</p>
+      </div>
+      <div class="project">
+        <h3>Automation Scripts</h3>
+        <p>Automated LinkedIn, YouTube, and WhatsApp with Python.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <form>
+      <input type="text" placeholder="Devesh kumawat" required />
+      <input type="email" placeholder="tigerzdk258@gmail.com" required />
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
   </section>
 
   <footer>
-    <p>Connect with me: <a href="https://github.com/DevKumar69" target="_blank">GitHub</a></p>
+    <p>Connect with me on:</p>
+    <div class="socials">
+      <a href="https://github.com/deveshkumawat258" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="#"><i class="fab fa-linkedin"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+    </div>
+    <p>&copy; 2025 Dev Kumar. All rights reserved.</p>
   </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>

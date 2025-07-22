@@ -1,16 +1,121 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-  font-family: Arial;
-  text-align: center;
-  background-color: #f2f2f2;
+  font-family: 'Segoe UI', sans-serif;
+  background: #f7f9fc;
+  color: #333;
+  line-height: 1.6;
+  scroll-behavior: smooth;
 }
+
 header {
-  background-color: #222;
-  color: white;
-  padding: 20px;
+  background: linear-gradient(135deg, #5f72be, #9b23ea);
+  color: #fff;
+  padding: 2rem 0;
+  text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
+
+header h1 {
+  font-size: 3rem;
+  margin-bottom: 0.3rem;
+  animation: fadeIn 1s ease-in-out;
+}
+
+header p {
+  font-size: 1.2rem;
+  opacity: 0.9;
+}
+
 section {
-  margin-top: 30px;
+  padding: 4rem 2rem;
+  max-width: 1000px;
+  margin: auto;
 }
+
+h2 {
+  text-align: center;
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+  color: #5f72be;
+  position: relative;
+}
+
+h2::after {
+  content: "";
+  width: 60px;
+  height: 4px;
+  background: #9b23ea;
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 10px;
+}
+
+.project {
+  background: white;
+  padding: 1rem 2rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+  border-left: 5px solid #9b23ea;
+  border-radius: 10px;
+}
+
 footer {
-  margin-top: 50px;
+  background: #222;
+  color: #eee;
+  padding: 2rem;
+  text-align: center;
+}
+
+form input, form textarea {
+  width: 100%;
+  padding: 1rem;
+  margin: 0.5rem 0;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+form button {
+  background: #5f72be;
+  color: #fff;
+  padding: 0.8rem 2rem;
+  border: none;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: background 0.3s ease;
+}
+
+form button:hover {
+  background: #9b23ea;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  } to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 2.2rem;
+  }
+
+  h2 {
+    font-size: 1.6rem;
+  }
 }
